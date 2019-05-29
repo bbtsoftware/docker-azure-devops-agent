@@ -42,6 +42,13 @@ These environment variables are supported:
 | AZP_POOL       | Agent pool name (default value: `Default`).                  |
 | AZP_WORK       | Work directory (default value: `_work`).                     |
 
+### Supported Azure Pipeline tasks
+
+The following Azure Pipeline tasks are supported:
+
+* Archive Files
+* Extract Files
+
 ## Samples
 
 ### docker-compose
