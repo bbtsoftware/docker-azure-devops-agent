@@ -26,7 +26,8 @@ rm -rf /azp/agent
 mkdir /azp/agent
 cd /azp/agent
 
-export AGENT_ALLOW_RUNASROOT="1"
+# Agent is running as user azp
+#export AGENT_ALLOW_RUNASROOT="1"
 
 cleanup() {
   if [ -e config.sh ]; then

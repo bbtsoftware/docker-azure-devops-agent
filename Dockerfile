@@ -6,7 +6,11 @@ LABEL MAINTAINER="BBT Software AG <devadmin@bbtsoftware.ch>"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
 
-RUN apt-get update && \
+RUN mkdir /azp && \
+    groupadd -r azp --gid=999 && \
+    useradd -r -g azp --uid=999 --home-dir=/azp --shell=/bin/bash azp && \
+    chown azp:azp /azp && \
+    apt-get update && \
     apt-get install -y --no-install-recommends \
         ca-certificates \
         curl \
@@ -20,3 +24,5 @@ WORKDIR /azp
 
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["docker-entrypoint.sh"]
+
+USER azp
