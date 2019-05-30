@@ -18,7 +18,11 @@ RUN mkdir /azp && \
         git \
         iputils-ping \
         libcurl3 \
-        libicu55
+        libicu55 \
+        libunwind8 \
+        netcat \ 
+        zip \
+        unzip
 
 WORKDIR /azp
 
