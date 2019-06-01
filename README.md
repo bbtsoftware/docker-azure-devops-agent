@@ -27,7 +27,6 @@ docker pull bbtsoftwareag/azure-devops-agent
 | Tag    | Description                                                                                  | Size                                                                                                                        |
 |--------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | latest | Latest master build                                                                          | ![Size](https://shields.beevelop.com/docker/image/image-size/bbtsoftwareag/azure-devops-agent/latest.svg?style=flat-square) |
-| 1.0.0  | Release [1.0.0](https://github.com/bbtsoftware/docker-azure-devops-agent/releases/tag/1.0.0) | ![Size](https://shields.beevelop.com/docker/image/image-size/bbtsoftwareag/azure-devops-agent/1.0.0.svg?style=flat-square)  |
 
 ### Configuration
 
