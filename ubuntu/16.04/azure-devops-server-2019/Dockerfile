@@ -27,7 +27,7 @@ RUN mkdir /azp && \
 WORKDIR /azp
 
 COPY docker-entrypoint.sh /usr/local/bin/
-RUN ln -s /usr/local/bin/docker-entrypoint.sh /
+
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 USER azp
