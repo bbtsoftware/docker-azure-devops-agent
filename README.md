@@ -27,6 +27,7 @@ docker pull bbtsoftwareag/azure-devops-agent
 | Tag                                   | Description                                                     | Size                                                                                                                                                       |
 |---------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ubuntu-16.04-azure-devops-server-2019 | Azure DevOps agent on Ubuntu 16.04 for Azure DevOps Server 2019 | ![Size](https://shields.beevelop.com/docker/image/image-size/bbtsoftwareag/azure-devops-agent/ubuntu-16.04-azure-devops-server-2019.svg?style=flat-square) |
+| debian-9-azure-devops-server-2019     | Azure DevOps agent on Debian 9 for Azure DevOps Server 2019     | ![Size](https://shields.beevelop.com/docker/image/image-size/bbtsoftwareag/azure-devops-agent/debian-9-azure-devops-server-2019.svg?style=flat-square)     |
 
 ### Configuration
 
