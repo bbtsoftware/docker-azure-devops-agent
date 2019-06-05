@@ -24,9 +24,9 @@ docker pull bbtsoftwareag/azure-devops-agent
 
 ### Tags
 
-| Tag    | Description                                                                                  | Size                                                                                                                        |
-|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| latest | Latest master build                                                                          | ![Size](https://shields.beevelop.com/docker/image/image-size/bbtsoftwareag/azure-devops-agent/latest.svg?style=flat-square) |
+| Tag                                   | Description                                                     | Size                                                                                                                                                       |
+|---------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ubuntu-16.04-azure-devops-server-2019 | Azure DevOps agent on Ubuntu 16.04 for Azure DevOps Server 2019 | ![Size](https://shields.beevelop.com/docker/image/image-size/bbtsoftwareag/azure-devops-agent/ubuntu-16.04-azure-devops-server-2019.svg?style=flat-square) |
 
 ### Configuration
 
@@ -57,7 +57,7 @@ version: '3.7'
 
 services:
   app:
-    image: bbtsoftwareag/azure-devops-agent:latest
+    image: bbtsoftwareag/azure-devops-agent:ubuntu-16.04-azure-devops-server-2019
     environment:
       - TZ=Europe/Zurich
       - AZP_URL=https://tfs.tempuri.org
@@ -75,5 +75,5 @@ docker run -d \
   -e AZP_URL=https://tfs.tempuri.org \
   -e AZP_TOKEN=tmk6je86ta8hvis7uk9csm9sncwrnuhjaxeqg5g6pe732cucby \
   -e AZP_AGENT_NAME=my-agent01 \
-  bbtsoftwareag/azure-devops-agent:latest
+  bbtsoftwareag/azure-devops-agent:ubuntu-16.04-azure-devops-server-2019
 ```
