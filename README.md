@@ -19,7 +19,7 @@ Docker image to run an Azure DevOps agent.
 ## Installation
 
 ```sh
-docker pull bbtsoftwareag/azure-devops-agent
+docker pull bbtsoftwareag/azure-devops-agent:ubuntu-16.04-azure-devops-server-2019
 ```
 
 ### Tags
