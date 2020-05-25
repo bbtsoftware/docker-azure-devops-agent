@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL MAINTAINER="BBT Software AG <devadmin@bbtsoftware.ch>"
+LABEL MAINTAINER="BBT Software AG <opensource@bbtsoftware.ch>"
 
 # To make it easier for build and release pipelines to run apt-get,
 # configure apt to not require confirmation (assume the -y argument by default)
@@ -20,7 +20,7 @@ RUN mkdir /azp && \
         libcurl3 \
         libicu55 \
         libunwind8 \
-        netcat \ 
+        netcat \
         zip \
         unzip
 
