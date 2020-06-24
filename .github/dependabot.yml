@@ -1,0 +1,7 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/ubuntu/16.04/azure-devops-server-2019"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
