@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 LABEL MAINTAINER="BBT Software AG <opensource@bbtsoftware.ch>"
 
 # To make it easier for build and release pipelines to run apt-get,
